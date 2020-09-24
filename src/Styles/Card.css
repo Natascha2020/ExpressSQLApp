@@ -1,0 +1,11 @@
+.cardWrapper {
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.buttonWrapper {
+  display: block;
+}

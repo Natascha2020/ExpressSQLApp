@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Card from "./Components/Card";
+import Axios from "axios";
 
-function App() {
+const App = () => {
+  const [allPosts, getAllPosts] = useState({});
+
+  useEffect(() => {
+    Axios.get("https://localhost:3000/admin")
+      .then((response) => {
+        console.log(response);
+        getAllPosts(response);
+      })
+      .catch((error) => console.error(error));
+  }, [allPosts]);
+
+  const editPost = (id) => {};
+
+  const deletePost = (id) => {};
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello World</h1>
+      {/* {allPosts && allPosts.length
+        ? allPosts.map((post, index) => {
+            return ( */}
+      <div>
+        <Card /* key={index}  */ handleEdit={editPost} handleDelete={deletePost} /* data={post} */ />
+      </div>
+      {/*  );
+          })
+        : undefined} */}
     </div>
   );
-}
+};
 
 export default App;
