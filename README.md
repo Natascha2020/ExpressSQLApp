@@ -6,7 +6,7 @@
 * GIT/GITHUB (branches per team member)
 
 # API
-* [ExpressSQL-API]https://github.com/Natascha2020/ExpressSQL.git (default API for usage)
+* [ExpressSQL-API](https://github.com/Natascha2020/ExpressSQL.git) (default API for usage)
 
 # How to run locally
 * System requirements: [Node.js](https://nodejs.org/)
