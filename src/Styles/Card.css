@@ -1,15 +1,73 @@
 img {
   width: 400px;
+  height: 250px;
 }
 
-.cardWrapper {
-  border: 1px solid darkgray;
-  border-radius: 20px;
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+.card {
+  width: 400px;
+  margin: 20px;
+  padding: 0px;
+  border: 0px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  background-color: rgb(212, 218, 223, 0.6);
+}
+
+.id {
+  font-size: 22px;
+}
+
+.country {
+  text-decoration: underline;
+}
+
+.location {
+  color: #a67c00;
+  font-size: 26px;
 }
 
 .buttonWrapper {
   display: block;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0px 10px 20px;
+  font-weight: bold;
+  width: 120px;
+  font-size: 14px;
+  background-color: lightslategrey;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #c4b997;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.africa {
+  border-top: 3px solid #fed52e;
+}
+.europe {
+  border-top: 3px solid #c10000;
+}
+.south-america {
+  border-top: 3px solid #008000;
+}
+.north-america {
+  border-top: 3px solid #00cc00;
+}
+.antarctica {
+  border-top: 3px solid #0040ff;
+}
+.australia {
+  border-top: 3px solid #c04080;
+}
+.asia {
+  border-top: 3px solid #f33e01;
 }
