@@ -6,7 +6,6 @@ import "./App.css";
 const App = () => {
   const [allPosts, getAllPosts] = useState({});
   const [postUpdate, setPostUpdate] = useState(false);
-  const [updateImage, setUpdateImage] = useState("");
 
   const apiUrl = "http://localhost:3000/admin/";
   const newImageUrl = "https://picsum.photos/200/300";
@@ -30,7 +29,6 @@ const App = () => {
   // handle update of specific post in database with a new random image url
 
   const editPost = async (id) => {
-    setUpdateImage(newImageUrl);
     try {
       await Axios.put(apiUrl + id, { imageurl: newImageUrl });
       setPostUpdate(true);
