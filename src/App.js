@@ -10,7 +10,7 @@ const App = () => {
   const apiUrl = "http://localhost:3000/admin/";
   const newImageUrl = "https://picsum.photos/200/300";
 
-  // fetching all posts from API
+  // fetching all posts from API, updating fetched data with onClick-Event of buttons
   useEffect(() => {
     fetchPosts();
   }, [postUpdate]);
