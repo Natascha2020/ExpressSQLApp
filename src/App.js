@@ -19,7 +19,6 @@ const App = () => {
     try {
       const { data } = await Axios.get(apiUrl);
       getAllPosts(data);
-      console.log(data);
       setPostUpdate(false);
     } catch (error) {
       console.error(error);
